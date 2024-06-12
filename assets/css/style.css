@@ -1,0 +1,284 @@
+body {   
+    margin: 0;
+    padding: 0;
+}
+
+.manrope {
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    line-height: 48px;
+}
+.container {
+    margin: 40px 36px;
+    max-width: 1920px;
+}
+.hero-block {
+    border-radius: 10px;
+}
+.h1 {
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: 30px;
+    color: #1F4284;
+    margin-bottom: 18px;
+}
+.text-card {
+    color: #727272;
+    font-family: Manrope;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27.2px;
+    margin-bottom: 25px;
+}
+.line-clumn {
+    display: flex;
+}
+.left-card {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 251px;
+    width: 538px;
+    margin: 72px 102px;
+}
+.left-block {
+    display: flex;
+    align-items: center;
+    background-color: #EBF0FA;
+    width: 50%;
+    border-radius: 10px 0px 0px 10px;
+}
+.right-block {
+    width: 50%;
+}
+.img-right {
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    width: 100%;
+}
+.div-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+    width: 341px;
+    height: 68px;
+    background-color: #244C98;
+    border-radius: 60px;
+    transition: all 0.3s ease;
+}
+.btn {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: #ffffff;
+}
+.div-btn:hover {
+    transform: scale(1.3);
+    background-color: #16940b;
+}
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: #000000be;
+    display: grid;
+    align-items:center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+.modal-box {
+    width: 500px;
+    transform: scale(0);
+    transition: transform 0.8s;
+    padding: 32px 48px 32px 32px;
+    z-index: 300;
+    background-color:#F0F4FC;
+    margin: 30px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    box-shadow: 0px 0px 17px -11px rgba(34, 60, 80, 0.2)
+}
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+}
+.modal.open, .modal-box {
+    transform: scale(1);
+}
+.line-krest {
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+}
+.krest {
+    display: flex;
+    font-family: Manrope;
+    cursor: pointer;
+    width: 52px;
+    height: 52px;
+    background-color: #ffffff;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+.krest:hover {
+    transform: scale(1.3);
+    background-color: #16940b;
+    color: #ffffff;
+}
+.input-first-line {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 73px;
+    background-color: #D7E2F6;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    border: 0;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.59px;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.input-first-line::placeholder{
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.59px;  
+    color:#1F4284;
+    padding-left: -20px;
+    box-sizing: border-box;
+}
+
+.text-vhod {
+    font-family: Manrope;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32.78px;
+    margin-bottom: 18px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.checkbox {
+    display: flex;
+    margin: 24px 0;
+    display: flex;
+    align-items: center;
+}
+.text-checkbox {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.59px;
+    margin-left: 10px;
+
+
+}
+.text-vostanovit {
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27.32px;
+    color: #244C98;
+    margin-bottom: 36px;
+    cursor: pointer;
+}
+.input-chekbox {
+    width: 24px;
+    height: 24px;
+}
+.btn-voiti {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 62px;
+    margin-bottom: 4px;
+    background-color: #244C98;
+    color: #ffffff;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28.8px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+.btn-zareg {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 62px;
+    margin-bottom: 4px;
+    background-color: #ffffff;
+    color: #244C98;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28.8px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.btn-voiti:hover {
+    transform: scale(1.1);
+    background-color: #16940b;
+}
+.btn-zareg:hover {
+    transform: scale(1.1);
+    background-color: #16940b;
+    color: #ffffff;
+}
+@media (max-width: 967px) {
+    .line-clumn {
+        flex-direction: column;
+    }
+    .left-block {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .right-block {
+        width: 100%;
+        
+    }
+    .left-card {
+        height: auto;
+        width: auto;
+        margin: 24px;
+    }
+    .img-right {
+        border-radius: 0px 0px 10px 10px;
+    }
+    .div-btn {
+        width: 270px;
+        height: 55px;
+    }
+    .modal-box {
+        width: 280px;
+    }
+@media (max-width: 375px) {
+    .div-btn {
+        width: 100%;
+    }
+}
+}

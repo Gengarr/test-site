@@ -276,9 +276,9 @@ body {
     .modal-box {
         width: 280px;
     }
+}
 @media (max-width: 375px) {
     .div-btn {
         width: 100%;
     }
-}
 }

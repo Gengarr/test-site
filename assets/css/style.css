@@ -249,7 +249,7 @@ body {
     background-color: #16940b;
     color: #ffffff;
 }
-@media (max-width: 768px) {
+@media (max-width: 967px) {
     .line-clumn {
         flex-direction: column;
     }
@@ -276,4 +276,9 @@ body {
     .modal-box {
         width: 280px;
     }
+@media (max-width: 375px) {
+.div-btn {
+    width: 100%;
+}
+}
 }
